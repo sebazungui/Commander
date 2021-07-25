@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://ligacommander.herokuapp.com/' });
+const API = axios.create({ baseURL: 'https://localhost:3000' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
